@@ -1,10 +1,10 @@
 import React from 'react';
 import "./Button.css";
 
-const Button = (props) => {
+const Button = ({ bgColor, label }) => {
     return (
         <div class="button-block">
-            <button style={{ backgroundColor: props.bgColor }}>{props.label}</button>
+            <button style={{ backgroundColor: bgColor }}>{label}</button>
         </div>
     )
 }
